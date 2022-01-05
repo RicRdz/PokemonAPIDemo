@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.DetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/character_details"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="64dp"
+            android:textSize="36sp"
+            android:textAllCaps="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/character_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/idTitle"
+            android:text="ID"
+            android:textSize="24sp"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="48dp"
+            app:layout_constraintTop_toBottomOf="@id/character_image"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/idData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{id}"
+            android:textColor="@color/yellow"
+            app:layout_constraintStart_toEndOf="@id/idTitle"
+            app:layout_constraintTop_toTopOf="@id/idTitle"
+            app:layout_constraintBottom_toBottomOf="@id/idTitle"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/abilitiesTitle"
+            android:text="Abilities"
+            android:textSize="24sp"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="48dp"
+            app:layout_constraintTop_toBottomOf="@id/idTitle"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/abilitiesData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{abilities}"
+            android:textColor="@color/yellow"
+            app:layout_constraintStart_toEndOf="@id/abilitiesTitle"
+            app:layout_constraintTop_toTopOf="@id/abilitiesTitle"
+            app:layout_constraintBottom_toBottomOf="@id/abilitiesTitle"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/heightTitle"
+            android:text="Height"
+            android:textSize="24sp"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="48dp"
+            app:layout_constraintTop_toBottomOf="@id/abilitiesTitle"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/heightData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{height}"
+            android:textColor="@color/yellow"
+            app:layout_constraintStart_toEndOf="@id/heightTitle"
+            app:layout_constraintTop_toTopOf="@id/heightTitle"
+            app:layout_constraintBottom_toBottomOf="@id/heightTitle"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/weightTitle"
+            android:text="Weight"
+            android:textSize="24sp"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="48dp"
+            app:layout_constraintTop_toBottomOf="@id/heightTitle"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/weightData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{weight}"
+            android:textColor="@color/yellow"
+            app:layout_constraintStart_toEndOf="@id/weightTitle"
+            app:layout_constraintTop_toTopOf="@id/weightTitle"
+            app:layout_constraintBottom_toBottomOf="@id/weightTitle"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/typesTitle"
+            android:text="Types"
+            android:textSize="24sp"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="48dp"
+            app:layout_constraintTop_toBottomOf="@id/weightTitle"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/typesData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{types}"
+            android:textColor="@color/yellow"
+            app:layout_constraintStart_toEndOf="@id/typesTitle"
+            app:layout_constraintTop_toTopOf="@id/typesTitle"
+            app:layout_constraintBottom_toBottomOf="@id/typesTitle"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
